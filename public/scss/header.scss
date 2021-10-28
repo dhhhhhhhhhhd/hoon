@@ -1,0 +1,24 @@
+@import 'font';
+@import 'import';
+
+*{margin:0; padding:0; list-style-type:none; text-decoration: none;}
+
+.header_container{
+    width:100%;
+    height:auto;
+    margin-top:0px;
+}
+
+@media(max-width:1024px){
+    .header_container{
+        img{
+            width:100%;
+        }
+    }
+}
+
+@media(max-width:766px){
+    .header_container{
+        margin-top:0%;
+    }
+}

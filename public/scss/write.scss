@@ -1,0 +1,344 @@
+@import "font";
+@import "import";
+@import "variable";
+
+.content_container {
+  width: $layout_width;
+  height: auto;
+  margin: 35px auto 85px;
+  .tab_menu_box {
+    width: $content_width;
+    height: 50px;
+    margin: 30px auto 100px;
+    li {
+      width: 33.1%;
+      height: 50px;
+      float: left;
+      text-align: center;
+      line-height: 50px;
+      border: 1px solid #c4c4c4;
+      border-right: none;
+      a {
+        color: #707070;
+        font-family: "NanumBarunGothic", sans-serif;
+      }
+      &:hover {
+        background-color: #eab900;
+        transition-duration: 0.5s;
+        a {
+          color: white;
+        }
+      }
+    }
+    li:last-of-type {
+      border-right: 1px solid #c4c4c4;
+    }
+  }
+  .content_box {
+    width: $content_width;
+    margin: 0 auto;
+    .title_box {
+      font-family: "NanumBarunGothic", sans-serif;
+      h3 {
+        font-size: 50px;
+        padding: 20px 0;
+        position: relative;
+        &::after {
+          content: "";
+          display: block;
+          position: absolute;
+          width: 50px;
+          height: 10px;
+          background-color: #f3c516;
+          top: -20px;
+          left: 0;
+        }
+      }
+    } // title_box
+    .table_box {
+      width: 100%;
+      height: auto;
+      margin: 110px auto;
+
+      .write_box {
+        width: 100%;
+        height: auto;
+        border-top: 2px solid #888888;
+        border-collapse: collapse;
+        text-align: center;
+        font-family: "NanumBarunGothic", sans-serif;
+        thead {
+          tr {
+            height: 60px;
+            border-bottom: 1px solid #bebebe;
+            td:first-of-type {
+              width: 10%;
+              background-color: #f8f8f8;
+              font-size: 14px;
+            }
+            td:last-of-type {
+              text-align: left;
+              input {
+                height: 30px;
+                margin: 0 20px;
+                padding: 0 10px;
+                border: 1px solid #a6a6a6;
+                border-radius: 5px;
+                outline: none;
+              }
+              input[name="title"] {
+                width: 620px;
+              }
+            }
+          }
+        }
+        tbody {
+          tr {
+            height: 30px;
+            td {
+              textarea {
+                width: 98%;
+                padding: 10px;
+                margin: 5px 0;
+              }
+            }
+          }
+        }
+      } // board_table
+    } // board_table
+    .btn_box {
+      width: 100%;
+      height: auto;
+      margin: 15px 0;
+      input {
+        float: right;
+      }
+      a,
+      input[type="submit"] {
+        padding: 7px 12px;
+        background-color: #5e5e5e;
+        border: 1px solid #a7a7a7;
+        color: white;
+        font-family: "NanumBarunGothic", sans-serif;
+        float: right;
+        font-size: 12px;
+        border-radius: 5px;
+        margin: 0 3px;
+      }
+      input[type="submit"] {
+        color: #f7e800;
+        cursor: pointer;
+      }
+      input[type="password"] {
+        width: 110px;
+        height: 28px;
+        padding: 0 10px;
+        border: 1px solid #a7a7a7;
+        border-radius: 5px;
+        margin: 0 5px 0 0;
+        font-family: "NanumBarunGothic", sans-serif;
+        outline: none;
+      }
+    } // btn_box
+  } // content_box
+} // content_container
+
+@media (max-width: 1024px) {
+  .content_container {
+    width: auto;
+    .tab_menu_box {
+      width: auto;
+      height: 50px;
+      margin: 30px auto 100px;
+      text-align: center;
+      li {
+        width: 30%;
+        height: 50px;
+        float: unset;
+        display: inline-block;
+        text-align: center;
+        line-height: 50px;
+        border: 1px solid #c4c4c4;
+        a {
+          color: #707070;
+          font-size: 0.8em;
+          font-family: "NanumBarunGothic", sans-serif;
+        }
+        &:hover {
+          background-color: #eab900;
+          transition-duration: 0.5s;
+          a {
+            color: white;
+          }
+        }
+      }
+      li:last-of-type {
+        border-right: 1px solid #c4c4c4;
+      }
+      li:nth-of-type(1) {
+        background-color: #eab900;
+        a {
+          color: white;
+        }
+      }
+    }
+    .content_box {
+      width: 90%;
+      .table_box {
+        .board_table {
+          thead {
+            tr {
+              height: 60px;
+              border-bottom: 1px solid #bebebe;
+              td:first-of-type {
+                width: 10%;
+                background-color: #f8f8f8;
+                font-size: 14px;
+              }
+              td:last-of-type {
+                text-align: left;
+                input {
+                  margin: 0 20px;
+                  padding: 0 10px;
+                }
+                input[name="title"] {
+                  width: 80%;
+                }
+              }
+            }
+            tr {
+              tbody {
+                tr {
+                  height: 30px;
+                  td {
+                    textarea {
+                      width: 98%;
+                      padding: 10px;
+                      margin: 5px 0;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        } // board_table
+      } // board_table
+      .btn_box {
+        width: 100%;
+        height: auto;
+        margin: 15px 0;
+        input {
+          float: right;
+        }
+        a,
+        input[type="submit"] {
+          padding: 7px 12px;
+          float: right;
+          font-size: 12px;
+          margin: 0 3px;
+        }
+        input[type="submit"] {
+          color: #f7e800;
+        }
+        input[type="password"] {
+          width: 110px;
+          height: 28px;
+          padding: 0 10px;
+          margin: 0 5px 0 0;
+        }
+      } // btn_box
+    } // content_box
+  } // content_container
+}
+
+@media (max-width: 766px) {
+  .content_container {
+    width: auto;
+    .content_box {
+      width: 98%;
+      .title_box {
+        margin: 0 0 0 30px;
+        h3 {
+          font-size: 1.6em;
+        }
+        p {
+          font-size: 0.8em;
+        }
+      } // title_box
+      .table_box {
+        width: 100%;
+        form {
+          width: 100%;
+          .write_box {
+            width: 100%;
+            thead {
+              tr {
+                height: 60px;
+                border-bottom: 1px solid #bebebe;
+                td:first-of-type {
+                  width: 30%;
+                  background-color: #f8f8f8;
+                  font-size: 14px;
+                }
+                td:last-of-type {
+                  text-align: left;
+                  input {
+                    margin: 0 20px;
+                    padding: 0 10px;
+                  }
+                  input[name="title"] {
+                    width: 80%;
+                  }
+                }
+              }
+            }
+            tr {
+              tbody {
+                tr {
+                  height: 30px;
+                  td {
+                    textarea {
+                      width: 98%;
+                      padding: 10px;
+                      margin: 5px 0;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      } // board_table
+    } // board_table
+    .btn_box {
+      width: 100%;
+      height: auto;
+      margin: 15px 0;
+      input {
+        float: right;
+      }
+      a,
+      input[type="submit"] {
+        padding: 7px 12px;
+        float: right;
+        font-size: 12px;
+        margin: 0 3px;
+      }
+      input[type="submit"] {
+        color: #f7e800;
+      }
+      input[type="password"] {
+        width: 110px;
+        height: 28px;
+        padding: 0 10px;
+        margin: 0 5px 0 0;
+      }
+    } // btn_box
+    .cke_toolbar:nth-of-type(1),
+    .cke_toolbar:nth-of-type(2),
+    .cke_toolbar:nth-of-type(3),
+    .cke_toolbar:nth-of-type(4) {
+      display: none;
+    }
+  } // content_box
+}

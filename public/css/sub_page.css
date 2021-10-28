@@ -1,0 +1,149 @@
+@font-face {
+  font-family: "Noto_regular";
+  font-style: normal;
+  font-weight: 400;
+  src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff2) format("woff2"), url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff) format("woff"), url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "Noto_right";
+  font-style: normal;
+  font-weight: 300;
+  src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.woff2) format("woff2"), url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.woff) format("woff"), url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "Noto_bold";
+  font-style: normal;
+  font-weight: 700;
+  src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.woff2) format("woff2"), url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.woff) format("woff"), url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "Arita_Medium";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Arita-dotum-Medium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "NanumBarunGothic";
+  font-style: normal;
+  font-weight: 700;
+  src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot");
+  src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot?#iefix") format("embedded-opentype"), url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.woff") format("woff"), url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.ttf") format("truetype");
+}
+
+.after::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.content_container {
+  width: 1920px;
+}
+
+.content_container ul {
+  width: 100%;
+  text-align: center;
+  margin: 40px auto;
+}
+
+.content_container ul li {
+  width: 10%;
+  display: inline-block;
+  border: 1px solid #c4c4c4;
+  padding: 15px 0px;
+  border-right: none;
+  font-size: 14px;
+  margin-right: -1px;
+  font-family: "Noto_regular", sans-serif;
+  cursor: pointer;
+}
+
+.content_container ul li:hover {
+  background-color: #446887;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+.content_container ul li:hover a {
+  color: white;
+}
+
+.content_container ul li a {
+  color: black;
+  padding: 15px 20px;
+}
+
+.content_container ul li:last-of-type {
+  border-right: 1px solid #c4c4c4;
+}
+
+.content_container ul .menu_active {
+  background-color: #446887;
+  color: white;
+}
+
+.content_container ul .menu_active a {
+  color: white;
+}
+
+.content_container .img_box {
+  width: 1200px;
+  text-align: center;
+  margin: 50px auto 10px;
+}
+
+.content_container .img_box img {
+  width: 100%;
+}
+
+@media (max-width: 1024px) {
+  .content_container {
+    width: auto;
+  }
+  .content_container ul {
+    margin: 40px auto;
+  }
+  .content_container ul li {
+    width: 17%;
+  }
+  .content_container .img_box {
+    width: auto;
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 914px) {
+  .img_box {
+    width: auto;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .img_box img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 766px) {
+  .content_container {
+    width: auto;
+  }
+  .content_container ul {
+    display: none;
+  }
+  .content_container ul li {
+    width: 17%;
+  }
+  .content_container .img_box {
+    width: auto;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .content_container .img_box img {
+    width: 100%;
+  }
+}

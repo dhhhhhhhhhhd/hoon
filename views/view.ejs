@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/css/nav.css">
+    <link rel="stylesheet" href="../public/css/header.css">
+    <link rel="stylesheet" href="../public/css/view.css">
+    <link rel="stylesheet" href="../public/css/footer.css">
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+    <script src="../public/js/<%-boardName%>/hrefAttr.js"></script>
+    <script src="../public/js/<%-boardName%>_comment/browser.js"></script>
+    <script src="../public/js/<%-boardName%>_comment/index.js" type="text/babel" data-presets="es2015,stage-2"></script>
+    <script src="../public/js/<%-boardName%>_comment/update.js"></script>
+    <title>아빠 대리운전</title>
+</head>
+
+<body>
+    <%-nav%>
+        <header class="header_container">
+            <img src="../public/img/sub_page/board_banner.png" alt="상단 이미지">
+            <script src="../public/js/inquiry.js"></script>
+        </header>
+        <main class="content_container">
+            <ul class="tab_menu_box">
+                <li><a href="/inquiry">문의 게시판</a></li>
+                <li><a href="/review">후기 게시판</a></li>
+                <li><a href="/infomation">정보 게시판</a></li>
+            </ul>
+            <div class="content_box">
+                <div class="title_box">
+                    <h3>
+                        <%-boardTitle%>
+                    </h3>
+                    <p>장거리전문 대리운전 아빠대리운전의 <%-boardTitle%> 입니다.</p>
+                </div>
+                <div class="table_box">
+                    <form action="">
+                        <h2>
+                            <%-title%>
+                        </h2>
+                        <table class="write_box">
+                            <thead>
+                                <tr>
+                                    <td>등록인</td>
+                                    <td>
+                                        <%-name%>
+                                    </td>
+                                    <td>날짜</td>
+                                    <td>
+                                        <%-insertDate%>
+                                    </td>
+                                    <td>조회수</td>
+                                    <td>
+                                        <%-hit%>
+                                    </td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td colspan="6">
+                                        <div class="text_box">
+                                            <%-text%>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="btn_box" value="<%-page%>">
+                            <a href="" class="update_btn">수정</a>
+                            <a href="" class="delete_btn">삭제</a>
+                            <a href="" class="cencel_btn">목록</a>
+                        </div>
+                    </form>
+                </div>
+                <table class="comment_box" id="comment_box_view">
+                    <thead>
+                        <tr>
+                            <td>Comments</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+            <div class="comment_insert_box">
+                <form action="<%-commentAction%>" method="post">
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>등록인</td>
+                                <td><input type="text" name="name" required></td>
+                                <td>비밀번호</td>
+                                <td colspan="2"><input type="password" name="psw" id="" required></td>
+                                <td></td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>내용</td>
+                                <td colspan="4">
+                                    <textarea name="text" id="" cols="30" rows="10" required></textarea>
+                                </td>
+                                <td>
+                                    <input type="submit" value="등록">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </form>
+            </div>
+
+            <div class="comment_update_box" style="display:none;">
+                <form action="" method="post">
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>등록인</td>
+                                <td><input type="text" name="name" class="name" required></td>
+                                <td>비밀번호확인</td>
+                                <td colspan="2"><input type="password" name="psw" id="" required></td>
+                                <td></td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>내용</td>
+                                <td colspan="4">
+                                    <textarea name="text" class="text" cols="30" rows="10" required></textarea>
+                                </td>
+                                <td>
+                                    <input type="submit" value="수정">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </form>
+            </div>
+        </main>
+        <%-footer%>
+</body>
+
+</html>

@@ -1,0 +1,287 @@
+@font-face {
+  font-family: "Noto_regular";
+  font-style: normal;
+  font-weight: 400;
+  src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff2) format("woff2"), url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff) format("woff"), url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "Noto_right";
+  font-style: normal;
+  font-weight: 300;
+  src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.woff2) format("woff2"), url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.woff) format("woff"), url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "Noto_bold";
+  font-style: normal;
+  font-weight: 700;
+  src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.woff2) format("woff2"), url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.woff) format("woff"), url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "Arita_Medium";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Arita-dotum-Medium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "NanumBarunGothic";
+  font-style: normal;
+  font-weight: 700;
+  src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot");
+  src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot?#iefix") format("embedded-opentype"), url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.woff") format("woff"), url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.ttf") format("truetype");
+}
+
+.after::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.content_container {
+  width: 1920px;
+  height: auto;
+  margin: 35px auto 85px;
+}
+
+.content_container .tab_menu_box {
+  width: 1250px;
+  height: 50px;
+  margin: 30px auto 100px;
+}
+
+.content_container .tab_menu_box li {
+  width: 33.1%;
+  height: 50px;
+  float: left;
+  text-align: center;
+  line-height: 50px;
+  border: 1px solid #c4c4c4;
+  border-right: none;
+}
+
+.content_container .tab_menu_box li a {
+  color: #707070;
+  font-family: "NanumBarunGothic", sans-serif;
+}
+
+.content_container .tab_menu_box li:hover {
+  background-color: #eab900;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+.content_container .tab_menu_box li:hover a {
+  color: white;
+}
+
+.content_container .tab_menu_box li:last-of-type {
+  border-right: 1px solid #c4c4c4;
+}
+
+.content_container .content_box {
+  width: 1250px;
+  margin: 0 auto;
+}
+
+.content_container .content_box .title_box {
+  font-family: "NanumBarunGothic", sans-serif;
+  margin: 0 0 0 10px;
+}
+
+.content_container .content_box .title_box h3 {
+  font-size: 50px;
+  padding: 20px 0;
+  position: relative;
+}
+
+.content_container .content_box .title_box h3::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 50px;
+  height: 10px;
+  background-color: #f3c516;
+  top: -20px;
+  left: 0;
+}
+
+.content_container .content_box .table_box {
+  width: 100%;
+  height: auto;
+  margin: 110px auto;
+}
+
+.content_container .content_box .table_box .board_table {
+  width: 100%;
+  height: auto;
+  border-top: 1px solid #888888;
+  border-collapse: collapse;
+  text-align: center;
+  font-family: "NanumBarunGothic", sans-serif;
+}
+
+.content_container .content_box .table_box .board_table thead tr {
+  height: 60px;
+  background-color: #f8f8f8;
+  border-bottom: 1px solid #bebebe;
+}
+
+.content_container .content_box .table_box .board_table tbody tr {
+  height: 50px;
+  border-bottom: 1px solid #bebebe;
+}
+
+.content_container .content_box .table_box .board_table tbody tr td {
+  color: #7e7e7e;
+}
+
+.content_container .content_box .table_box .board_table tbody tr td a {
+  color: #7e7e7e;
+}
+
+.content_container .content_box .table_box .board_table tbody tr td:nth-of-type(2) {
+  padding-left: 20px;
+  text-align: left;
+}
+
+.content_container .content_box .btn_box {
+  width: 100%;
+  height: auto;
+  margin: 37px 0;
+}
+
+.content_container .content_box .btn_box a {
+  padding: 10px 20px;
+  background-color: #7e7e7e;
+  border: 1px solid #bebebe;
+  color: white;
+  font-family: "NanumBarunGothic", sans-serif;
+  float: right;
+}
+
+.content_container .content_box .paging_box {
+  width: auto;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.content_container .content_box .paging_box span {
+  padding: 5px 12px;
+  border: 1px solid #bfbfbf;
+  background-color: #5e5e5e;
+  color: white;
+  cursor: pointer;
+}
+
+.content_container .content_box .paging_box .prev,
+.content_container .content_box .paging_box .next {
+  padding: 5px 15px;
+  position: relative;
+  background-color: unset;
+}
+
+.content_container .content_box .paging_box .prev img,
+.content_container .content_box .paging_box .next img {
+  position: absolute;
+  top: 5px;
+  left: 10px;
+}
+
+@media (max-width: 1024px) {
+  .content_container {
+    width: auto;
+  }
+  .content_container .tab_menu_box {
+    width: auto;
+    height: 50px;
+    margin: 30px auto 100px;
+    text-align: center;
+  }
+  .content_container .tab_menu_box li {
+    width: 30%;
+    height: 50px;
+    float: unset;
+    display: inline-block;
+    text-align: center;
+    line-height: 50px;
+    border: 1px solid #c4c4c4;
+  }
+  .content_container .tab_menu_box li a {
+    color: #707070;
+    font-size: 0.8em;
+    font-family: "NanumBarunGothic", sans-serif;
+  }
+  .content_container .tab_menu_box li:hover {
+    background-color: #eab900;
+    -webkit-transition-duration: 0.5s;
+            transition-duration: 0.5s;
+  }
+  .content_container .tab_menu_box li:hover a {
+    color: white;
+  }
+  .content_container .tab_menu_box li:last-of-type {
+    border-right: 1px solid #c4c4c4;
+  }
+  .content_container .content_box {
+    width: 90%;
+  }
+  .content_container .content_box .table_box .board_table tbody tr td:nth-of-type(2) {
+    width: 50px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: inline-block;
+    line-height: 50px;
+  }
+  .content_container .content_box .btn_box {
+    width: 100%;
+    height: auto;
+    margin: 37px 0;
+  }
+  .content_container .content_box .btn_box a {
+    padding: 10px 20px;
+    background-color: #7e7e7e;
+    border: 1px solid #bebebe;
+    color: white;
+    font-family: "NanumBarunGothic", sans-serif;
+    float: right;
+  }
+  .content_container .content_box .paging_box {
+    width: auto;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .content_container .content_box .paging_box span {
+    padding: 5px 12px;
+    border: 1px solid #bfbfbf;
+    background-color: #5e5e5e;
+    color: white;
+  }
+  .content_container .content_box .paging_box .prev,
+  .content_container .content_box .paging_box .next {
+    padding: 5px 15px;
+    position: relative;
+    background-color: unset;
+  }
+  .content_container .content_box .paging_box .prev img,
+  .content_container .content_box .paging_box .next img {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+  }
+}
+
+@media (max-width: 766px) {
+  .content_container {
+    width: auto;
+  }
+  .content_container .content_box .title_box h3 {
+    font-size: 1.6em;
+  }
+  .content_container .content_box .title_box p {
+    font-size: 0.8em;
+  }
+}

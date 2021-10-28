@@ -1,0 +1,328 @@
+@font-face {
+  font-family: "Noto_regular";
+  font-style: normal;
+  font-weight: 400;
+  src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff2) format("woff2"), url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff) format("woff"), url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "Noto_right";
+  font-style: normal;
+  font-weight: 300;
+  src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.woff2) format("woff2"), url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.woff) format("woff"), url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "Noto_bold";
+  font-style: normal;
+  font-weight: 700;
+  src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.woff2) format("woff2"), url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.woff) format("woff"), url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "Arita_Medium";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Arita-dotum-Medium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "NanumBarunGothic";
+  font-style: normal;
+  font-weight: 700;
+  src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot");
+  src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot?#iefix") format("embedded-opentype"), url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.woff") format("woff"), url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.ttf") format("truetype");
+}
+
+.after::after, .nav_container .menu_container li::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.nav_container {
+  width: 1920px;
+  padding: 49px 0px;
+  border-bottom: 1px solid #e7edf1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background: url("../img/nav/nav_bg.png") no-repeat;
+  background-size: 100% 100%;
+}
+
+.nav_container .m_menu_btn {
+  display: none;
+}
+
+.nav_container .m_menu_close {
+  display: none;
+}
+
+.nav_container .logo_container {
+  width: 200px;
+  position: absolute;
+  top: 24px;
+  left: 300px;
+}
+
+.nav_container .m_menu_container {
+  display: none;
+}
+
+.nav_container .menu_container {
+  width: 965px;
+  height: 100%;
+  position: absolute;
+  right: 273px;
+  top: 0;
+  line-height: 95px;
+}
+
+.nav_container .menu_container li {
+  width: 15%;
+  height: 100%;
+  float: left;
+  margin: 0px 10px;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.nav_container .menu_container li a {
+  color: white;
+  font-size: 22px;
+  font-family: "Noto_regular", sans-serif;
+}
+
+.nav_container .menu_container li:hover a {
+  color: #353234;
+}
+
+.nav_container .sub_menu {
+  width: 100%;
+  height: 310px;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.76);
+  left: 0;
+  top: 98px;
+  text-align: center;
+  display: none;
+}
+
+.nav_container .sub_menu .sub_menu_box {
+  width: 965px;
+  height: 310px;
+  display: inline-block;
+  margin-left: 300px;
+  text-align: center;
+}
+
+.nav_container .sub_menu .sub_menu_box .sub_menu_list {
+  width: 100%;
+  height: 310px;
+}
+
+.nav_container .sub_menu .sub_menu_box .sub_menu_list li {
+  width: 15%;
+  height: 100%;
+  float: left;
+  margin: 0 20px;
+}
+
+.nav_container .sub_menu .sub_menu_box .sub_menu_list li ul {
+  width: 100%;
+  margin: 0;
+}
+
+.nav_container .sub_menu .sub_menu_box .sub_menu_list li ul li {
+  width: 100%;
+  margin: 20px 0 10px;
+}
+
+.nav_container .sub_menu .sub_menu_box .sub_menu_list li ul li a {
+  font-size: 16px;
+  font-family: "NanumBarunGothic", sans-serif;
+  color: #373531;
+  font-weight: bold;
+}
+
+.nav_container .sub_menu .sub_menu_box .sub_menu_list .this_sub_menu:nth-of-type(1) {
+  margin-left: 63px;
+}
+
+.nav_container .sub_menu .sub_menu_box .sub_menu_list .this_sub_menu:nth-of-type(2) {
+  margin-left: 0px;
+}
+
+.nav_container .sub_menu .sub_menu_box .sub_menu_list .this_sub_menu:nth-of-type(3) {
+  margin-left: 2px;
+}
+
+.nav_container .sub_menu .sub_menu_box .sub_menu_list .this_sub_menu:nth-of-type(4) {
+  margin-left: 0px;
+}
+
+.nav_container .sub_menu .sub_menu_box .sub_menu_list .this_sub_menu:nth-of-type(5) {
+  margin-left: 0px;
+}
+
+@media (max-width: 1024px) {
+  .nav_container {
+    width: 100%;
+  }
+  .nav_container .logo_container {
+    width: auto;
+    left: 2%;
+  }
+  .nav_container .menu_container {
+    width: 65%;
+    right: -5%;
+  }
+  .nav_container .menu_container li {
+    width: 18%;
+    margin: 0px 0px;
+  }
+  .nav_container .menu_container li a {
+    font-size: 0.9em;
+  }
+  .nav_container .sub_menu {
+    width: 100%;
+    height: 310px;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.76);
+    left: 0;
+    top: 98px;
+    text-align: center;
+  }
+  .nav_container .sub_menu .sub_menu_box {
+    width: 60%;
+    height: 310px;
+    float: right;
+    text-align: center;
+  }
+  .nav_container .sub_menu .sub_menu_box .sub_menu_list {
+    width: auto;
+    height: 310px;
+  }
+  .nav_container .sub_menu .sub_menu_box .sub_menu_list li {
+    width: 19%;
+    height: 100%;
+    float: left;
+    margin: 0 0px;
+  }
+  .nav_container .sub_menu .sub_menu_box .sub_menu_list li ul {
+    width: 100%;
+    margin: 0;
+  }
+  .nav_container .sub_menu .sub_menu_box .sub_menu_list li ul li {
+    width: 100%;
+    margin: 20px 0 10px;
+  }
+  .nav_container .sub_menu .sub_menu_box .sub_menu_list li ul li a {
+    font-size: 14px;
+    font-family: "NanumBarunGothic", sans-serif;
+    color: #373531;
+    font-weight: bold;
+  }
+  .nav_container .sub_menu .sub_menu_box .sub_menu_list .this_sub_menu:nth-of-type(1) {
+    margin-left: 0%;
+  }
+  .nav_container .sub_menu .sub_menu_box .sub_menu_list .this_sub_menu:nth-of-type(2) {
+    margin-left: 1%;
+  }
+  .nav_container .sub_menu .sub_menu_box .sub_menu_list .this_sub_menu:nth-of-type(3) {
+    margin-left: 0%;
+  }
+  .nav_container .sub_menu .sub_menu_box .sub_menu_list .this_sub_menu:nth-of-type(4) {
+    margin-left: 0.5%;
+  }
+  .nav_container .sub_menu .sub_menu_box .sub_menu_list .this_sub_menu:nth-of-type(5) {
+    margin-left: 0.5%;
+  }
+}
+
+@media (max-width: 766px) {
+  .nav_container {
+    width: 100%;
+    padding: 8%;
+    background: none;
+    background-color: rgba(31, 46, 60, 0.69);
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 8% 0;
+  }
+  .nav_container .m_menu_btn {
+    display: block;
+    width: 8%;
+    position: absolute;
+    top: 28%;
+    left: 4%;
+    cursor: pointer;
+  }
+  .nav_container .logo_container {
+    width: 40%;
+    left: 55%;
+    top: 26%;
+  }
+  .nav_container .logo_container a img {
+    width: 100%;
+  }
+  .nav_container .menu_container {
+    display: none;
+  }
+  .nav_container .m_menu_container {
+    width: 70%;
+    height: 1000%;
+    position: absolute;
+    background-color: white;
+    display: block;
+    left: -100%;
+    top: 0;
+    text-align: center;
+  }
+  .nav_container .m_menu_container .m_menu_close {
+    display: block;
+    position: absolute;
+    right: 15px;
+    top: 5px;
+    cursor: pointer;
+  }
+  .nav_container .m_menu_container li {
+    width: 100%;
+    height: 20px;
+    margin: 3% 0;
+    line-height: 20px;
+  }
+  .nav_container .m_menu_container li a {
+    font-family: "NanumBarunGothic", sans-serif;
+    color: #373531;
+    font-size: 12px;
+  }
+  .nav_container .m_menu_container li a:hover {
+    color: #f3c516;
+    -webkit-transition-duration: 0.5s;
+            transition-duration: 0.5s;
+  }
+  .nav_container .m_menu_container .m_menu_title {
+    background-color: #f3c516;
+    margin-top: 7%;
+    height: 25px;
+    line-height: 25px;
+  }
+  .nav_container .m_menu_container .m_menu_title a {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .nav_container .m_menu_container .m_menu_title a:hover {
+    color: #373531;
+  }
+  .nav_container .m_menu_container li:first-of-type {
+    margin: 20% 0 0;
+  }
+  .sub_menu {
+    display: none;
+  }
+}

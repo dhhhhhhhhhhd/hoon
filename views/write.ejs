@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/css/nav.css">
+    <link rel="stylesheet" href="../public/css/header.css">
+    <link rel="stylesheet" href="../public/css/write.css">
+    <link rel="stylesheet" href="../public/css/footer.css">
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+    <script src="../public/js/<%-boardName%>/hrefAttr.js"></script>
+    <script src="../public/js/ckeditor/ckeditor.js"></script>
+    <title>아빠 대리운전</title>
+</head>
+<body>
+    <%-nav%>
+    <header class="header_container">
+        <img src="../public/img/sub_page/board_banner.png" alt="상단 이미지">
+        <script src="../public/js/inquiry.js"></script>
+    </header>
+    <main class="content_container">
+        <ul class="tab_menu_box">
+            <li><a href="/inquiry">문의 게시판</a></li>
+            <li><a href="/review">후기 게시판</a></li>
+            <li><a href="/infomation">정보 게시판</a></li>
+        </ul>
+        <div class="content_box">
+            <div class="title_box">
+                <h3><%-boardTitle%></h3>
+                <p>장거리전문 대리운전 아빠대리운전의 <%-boardTitle%> 입니다.</p>
+            </div>
+            <div class="table_box">
+                <form action="<%-action%>" method="post">
+                    <table class="write_box">
+                        <thead>
+                            <tr>
+                                <td>등록인</td>
+                                <td><input type="text" name="name" required></td>
+                            </tr>
+                            <tr>
+                                <td>제목</td>
+                                <td><input type="text" name="title" required></td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td colspan="2"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <textarea name="text" id="text" required></textarea>
+                                </td>
+                            </tr>
+                            <script>
+                                $(function(){
+                                    $(document).ready(function(){
+                                        CKEDITOR.replace("text",{
+                                            filebrowserUploadUrl:'/<%-boardName%>/imgUpload',
+                                        });
+                                    });
+                                });
+                            </script>
+                        </tbody>
+                    </table>
+                    <div class="btn_box">
+                        <input type="submit" value="작성하기">
+                        <a href="" class="cencel_btn">목록으로</a>
+                        <input type="password" name="psw" placeholder="비밀번호">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <%-footer%>
+</body>
+</html>

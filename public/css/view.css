@@ -1,0 +1,634 @@
+@font-face {
+  font-family: "Noto_regular";
+  font-style: normal;
+  font-weight: 400;
+  src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff2) format("woff2"), url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff) format("woff"), url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "Noto_right";
+  font-style: normal;
+  font-weight: 300;
+  src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.woff2) format("woff2"), url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.woff) format("woff"), url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "Noto_bold";
+  font-style: normal;
+  font-weight: 700;
+  src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.woff2) format("woff2"), url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.woff) format("woff"), url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "Arita_Medium";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Arita-dotum-Medium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "NanumBarunGothic";
+  font-style: normal;
+  font-weight: 700;
+  src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot");
+  src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot?#iefix") format("embedded-opentype"), url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.woff") format("woff"), url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.ttf") format("truetype");
+}
+
+.after::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.content_container {
+  width: 1920px;
+  height: auto;
+  margin: 35px auto 85px;
+}
+
+.content_container .tab_menu_box {
+  width: 1250px;
+  height: 50px;
+  margin: 30px auto 100px;
+}
+
+.content_container .tab_menu_box li {
+  width: 33.1%;
+  height: 50px;
+  float: left;
+  text-align: center;
+  line-height: 50px;
+  border: 1px solid #c4c4c4;
+  border-right: none;
+}
+
+.content_container .tab_menu_box li a {
+  color: #707070;
+  font-family: "NanumBarunGothic", sans-serif;
+}
+
+.content_container .tab_menu_box li:hover {
+  background-color: #eab900;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+.content_container .tab_menu_box li:hover a {
+  color: white;
+}
+
+.content_container .tab_menu_box li:last-of-type {
+  border-right: 1px solid #c4c4c4;
+}
+
+.content_container .content_box {
+  width: 1250px;
+  margin: 0 auto;
+}
+
+.content_container .content_box .title_box {
+  font-family: "NanumBarunGothic", sans-serif;
+}
+
+.content_container .content_box .title_box h3 {
+  font-size: 50px;
+  padding: 20px 0;
+  position: relative;
+}
+
+.content_container .content_box .title_box h3::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 50px;
+  height: 10px;
+  background-color: #f3c516;
+  top: -20px;
+  left: 0;
+}
+
+.content_container .content_box .table_box {
+  width: 100%;
+  height: auto;
+  margin: 110px auto;
+}
+
+.content_container .content_box .table_box h2 {
+  margin: 10px 0;
+}
+
+.content_container .content_box .table_box .write_box {
+  width: 1250px;
+  height: auto;
+  border-top: 2px solid #888888;
+  border-bottom: 2px solid #c0c0c0;
+  border-collapse: collapse;
+}
+
+.content_container .content_box .table_box .write_box thead {
+  font-family: "NanumBarunGothic", sans-serif;
+}
+
+.content_container .content_box .table_box .write_box thead tr {
+  height: 55px;
+  text-align: center;
+  border-bottom: 1px solid #bebebe;
+}
+
+.content_container .content_box .table_box .write_box thead tr td:nth-of-type(odd) {
+  width: 10%;
+  background-color: #f8f8f8;
+  font-size: 14px;
+}
+
+.content_container .content_box .table_box .write_box thead tr td:nth-of-type(even) {
+  text-align: left;
+  padding: 0 20px;
+  font-size: 14px;
+}
+
+.content_container .content_box .table_box .write_box thead tr td:nth-of-type(2),
+.content_container .content_box .table_box .write_box thead tr td:nth-of-type(4) {
+  width: 10%;
+}
+
+.content_container .content_box .table_box .write_box tbody tr {
+  height: 30px;
+}
+
+.content_container .content_box .table_box .write_box tbody tr td .text_box {
+  width: 1230px;
+  height: auto;
+  padding: 100px 10px;
+  margin: 5px 0;
+  overflow: scroll;
+}
+
+.content_container .content_box .table_box .write_box tbody tr td .text_box p img {
+  width: auto;
+}
+
+.content_container .content_box .btn_box {
+  width: 100%;
+  height: auto;
+  margin: 15px 0;
+}
+
+.content_container .content_box .btn_box input {
+  float: right;
+}
+
+.content_container .content_box .btn_box a,
+.content_container .content_box .btn_box input[type="submit"] {
+  padding: 7px 12px;
+  background-color: #5e5e5e;
+  border: 1px solid #a7a7a7;
+  color: white;
+  font-family: "NanumBarunGothic", sans-serif;
+  float: right;
+  font-size: 12px;
+  border-radius: 5px;
+  margin: 0 3px;
+}
+
+.content_container .content_box .btn_box input[type="submit"] {
+  color: #f7e800;
+}
+
+.content_container .content_box .btn_box input[type="password"] {
+  width: 110px;
+  height: 28px;
+  padding: 0 10px;
+  border: 1px solid #a7a7a7;
+  border-radius: 5px;
+  margin: 0 5px 0 0;
+  font-family: "NanumBarunGothic", sans-serif;
+  outline: none;
+}
+
+.content_container .comment_box {
+  width: 1250px;
+  border-top: 2px solid #888888;
+  border-collapse: collapse;
+}
+
+.content_container .comment_box thead tr {
+  background-color: #f8f8f8;
+  border-bottom: 1px solid #dddddd;
+  height: 35px;
+  font-family: "NanumBarunGothic", sans-serif;
+}
+
+.content_container .comment_box thead tr td {
+  font-size: 16px;
+  padding: 0 0 0 20px;
+  line-height: 35px;
+  color: #3b3a38;
+}
+
+.content_container .comment_box tbody tr {
+  height: auto;
+  border-bottom: 1px solid #dddddd;
+}
+
+.content_container .comment_box tbody tr td {
+  padding: 0 0 50px;
+}
+
+.content_container .comment_box tbody tr td h3 {
+  margin: 15px;
+  font-size: 16px;
+}
+
+.content_container .comment_box tbody tr td h3 b {
+  font-size: 11px;
+  margin: 0 0 0 10px;
+}
+
+.content_container .comment_box tbody tr td .comment_text_box {
+  width: 100%;
+  height: auto;
+}
+
+.content_container .comment_box tbody tr td .comment_text_box .comment_text {
+  width: 80%;
+  height: auto;
+  padding: 15px;
+  float: left;
+}
+
+.content_container .comment_box tbody tr td .comment_text_box .comment_btn {
+  float: right;
+  width: 17%;
+  height: auto;
+}
+
+.content_container .comment_box tbody tr td .comment_text_box .comment_btn ul {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.content_container .comment_box tbody tr td .comment_text_box .comment_btn ul li {
+  display: inline-block;
+  margin: 10px;
+}
+
+.content_container .comment_box tbody tr td .comment_text_box .comment_btn ul li span {
+  cursor: pointer;
+}
+
+.content_container .comment_insert_box,
+.content_container .comment_update_box {
+  width: 1250px;
+  margin: 0 auto;
+  font-family: "NanumBarunGothic", sans-serif;
+}
+
+.content_container .comment_insert_box form table,
+.content_container .comment_update_box form table {
+  width: 100%;
+  border-collapse: collapse;
+  border-top: 2px solid #888888;
+  text-align: center;
+  font-size: 12px;
+}
+
+.content_container .comment_insert_box form table thead tr,
+.content_container .comment_update_box form table thead tr {
+  height: 55px;
+  border-bottom: 1px solid #dddddd;
+}
+
+.content_container .comment_insert_box form table thead tr td:nth-of-type(odd),
+.content_container .comment_update_box form table thead tr td:nth-of-type(odd) {
+  width: 100px;
+  background-color: #f8f8f8;
+}
+
+.content_container .comment_insert_box form table thead tr td:nth-of-type(even),
+.content_container .comment_update_box form table thead tr td:nth-of-type(even) {
+  text-align: left;
+  width: 200px;
+}
+
+.content_container .comment_insert_box form table thead tr td:nth-of-type(even) input,
+.content_container .comment_update_box form table thead tr td:nth-of-type(even) input {
+  width: 100px;
+  margin: 0 30px;
+  padding: 0 10px;
+  height: 30px;
+  border: 1px solid #a6a6a6;
+  border-radius: 5px;
+  outline: none;
+}
+
+.content_container .comment_insert_box form table thead tr td:last-of-type,
+.content_container .comment_update_box form table thead tr td:last-of-type {
+  background-color: unset;
+}
+
+.content_container .comment_insert_box form table tbody tr,
+.content_container .comment_update_box form table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.content_container .comment_insert_box form table tbody tr td,
+.content_container .comment_update_box form table tbody tr td {
+  position: relative;
+}
+
+.content_container .comment_insert_box form table tbody tr td textarea,
+.content_container .comment_update_box form table tbody tr td textarea {
+  width: 97%;
+  padding: 15px;
+  outline: none;
+  resize: none;
+  border: none;
+}
+
+.content_container .comment_insert_box form table tbody tr td input[type="submit"],
+.content_container .comment_update_box form table tbody tr td input[type="submit"] {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: none;
+  background-color: #f3c516;
+  font-family: "NanumBarunGothic", sans-serif;
+}
+
+.content_container .comment_insert_box form table tbody tr td:first-of-type,
+.content_container .comment_update_box form table tbody tr td:first-of-type {
+  background-color: #f8f8f8;
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .comment_insert_box,
+  .comment_update_box {
+    width: 1250px;
+    margin: 0 auto;
+    font-family: "NanumBarunGothic", sans-serif;
+  }
+  .comment_insert_box form table,
+  .comment_update_box form table {
+    width: 100%;
+    border-collapse: collapse;
+    border-top: 2px solid #888888;
+    text-align: center;
+    font-size: 12px;
+  }
+  .comment_insert_box form table thead tr,
+  .comment_update_box form table thead tr {
+    height: 55px;
+    border-bottom: 1px solid #dddddd;
+  }
+  .comment_insert_box form table thead tr td:nth-of-type(odd),
+  .comment_update_box form table thead tr td:nth-of-type(odd) {
+    width: 100px;
+    background-color: #f8f8f8;
+  }
+  .comment_insert_box form table thead tr td:nth-of-type(even),
+  .comment_update_box form table thead tr td:nth-of-type(even) {
+    text-align: left;
+    width: 200px;
+  }
+  .comment_insert_box form table thead tr td:nth-of-type(even) input,
+  .comment_update_box form table thead tr td:nth-of-type(even) input {
+    width: 100px;
+    margin: 0 30px;
+    padding: 0 10px;
+    height: 30px;
+    border: 1px solid #a6a6a6;
+    border-radius: 5px;
+    outline: none;
+  }
+  .comment_insert_box form table thead tr td:last-of-type,
+  .comment_update_box form table thead tr td:last-of-type {
+    background-color: unset;
+  }
+  .comment_insert_box form table tbody tr td input[type="submit"],
+  .comment_update_box form table tbody tr td input[type="submit"] {
+    width: 100%;
+    height: 100%;
+    padding: 90px 20px;
+    position: unset;
+    float: right;
+    top: 0;
+    left: 0;
+    border: none;
+    background-color: #f3c516;
+    font-family: "NanumBarunGothic", sans-serif;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 1024px) {
+  .content_container {
+    width: auto;
+  }
+  .content_container .tab_menu_box {
+    width: auto;
+    height: 50px;
+    margin: 30px auto 100px;
+    text-align: center;
+  }
+  .content_container .tab_menu_box li {
+    width: 30%;
+    height: 50px;
+    float: unset;
+    display: inline-block;
+    text-align: center;
+    line-height: 50px;
+    border: 1px solid #c4c4c4;
+  }
+  .content_container .tab_menu_box li a {
+    color: #707070;
+    font-size: 0.8em;
+    font-family: "NanumBarunGothic", sans-serif;
+  }
+  .content_container .tab_menu_box li:hover {
+    background-color: #eab900;
+    -webkit-transition-duration: 0.5s;
+            transition-duration: 0.5s;
+  }
+  .content_container .tab_menu_box li:hover a {
+    color: white;
+  }
+  .content_container .tab_menu_box li:last-of-type {
+    border-right: 1px solid #c4c4c4;
+  }
+  .content_container .content_box {
+    width: 90%;
+  }
+  .content_container .content_box .table_box {
+    width: 100%;
+  }
+  .content_container .content_box .table_box .write_box {
+    width: 100%;
+  }
+  .content_container .content_box .table_box .write_box tbody tr td .text_box {
+    width: 100%;
+  }
+  .content_container .content_box .table_box .board_table {
+    width: 100%;
+  }
+  .content_container .content_box .table_box .board_table thead tr {
+    height: 60px;
+    border-bottom: 1px solid #bebebe;
+  }
+  .content_container .content_box .table_box .board_table thead tr td:first-of-type {
+    width: 10%;
+    background-color: #f8f8f8;
+    font-size: 14px;
+  }
+  .content_container .content_box .table_box .board_table thead tr td:last-of-type {
+    text-align: left;
+  }
+  .content_container .content_box .table_box .board_table thead tr td:last-of-type input {
+    margin: 0 20px;
+    padding: 0 10px;
+  }
+  .content_container .content_box .table_box .board_table thead tr td:last-of-type input[name="title"] {
+    width: 80%;
+  }
+  .content_container .content_box .table_box .board_table thead tbody tr {
+    height: 30px;
+  }
+  .content_container .content_box .table_box .board_table thead tbody tr td textarea {
+    width: 98%;
+    padding: 10px;
+    margin: 5px 0;
+  }
+  .content_container .content_box .btn_box {
+    width: 100%;
+    height: auto;
+    margin: 15px 0;
+  }
+  .content_container .content_box .btn_box input {
+    float: right;
+  }
+  .content_container .content_box .btn_box a,
+  .content_container .content_box .btn_box input[type="submit"] {
+    padding: 7px 12px;
+    float: right;
+    font-size: 12px;
+    margin: 0 3px;
+  }
+  .content_container .content_box .btn_box input[type="submit"] {
+    color: #f7e800;
+  }
+  .content_container .content_box .btn_box input[type="password"] {
+    width: 110px;
+    height: 28px;
+    padding: 0 10px;
+    margin: 0 5px 0 0;
+  }
+  .content_container .comment_box {
+    width: 100%;
+  }
+  .content_container .comment_insert_box {
+    width: 90%;
+  }
+}
+
+@media (max-width: 766px) {
+  .content_container {
+    width: 100%;
+  }
+  .content_container .content_box {
+    width: 98%;
+  }
+  .content_container .content_box .title_box {
+    margin: 0 0 0 30px;
+  }
+  .content_container .content_box .title_box h3 {
+    font-size: 1.6em;
+  }
+  .content_container .content_box .title_box p {
+    font-size: 0.8em;
+  }
+  .content_container .content_box .table_box {
+    width: 100%;
+  }
+  .content_container .content_box .table_box form {
+    width: 100%;
+  }
+  .content_container .content_box .table_box form .write_box {
+    width: 100%;
+  }
+  .content_container .content_box .table_box form .write_box thead tr {
+    height: 60px;
+    border-bottom: 1px solid #bebebe;
+  }
+  .content_container .content_box .table_box form .write_box thead tr td:first-of-type {
+    width: 30%;
+    background-color: #f8f8f8;
+    font-size: 14px;
+  }
+  .content_container .content_box .table_box form .write_box thead tr td:last-of-type {
+    text-align: left;
+  }
+  .content_container .content_box .table_box form .write_box thead tr td:last-of-type input {
+    margin: 0 20px;
+    padding: 0 10px;
+  }
+  .content_container .content_box .table_box form .write_box thead tr td:last-of-type input[name="title"] {
+    width: 80%;
+  }
+  .content_container .content_box .table_box form .write_box tbody tr {
+    height: 30px;
+  }
+  .content_container .content_box .table_box form .write_box tbody tr td .text_box {
+    width: 100%;
+  }
+  .content_container .content_box .table_box form .write_box tbody tr td textarea {
+    width: 98%;
+    padding: 10px;
+    margin: 5px 0;
+  }
+  .content_container .btn_box {
+    width: 100%;
+    height: auto;
+    margin: 15px 0;
+  }
+  .content_container .btn_box input {
+    float: right;
+  }
+  .content_container .btn_box a,
+  .content_container .btn_box input[type="submit"] {
+    padding: 7px 12px;
+    float: right;
+    font-size: 12px;
+    margin: 0 3px;
+  }
+  .content_container .btn_box input[type="submit"] {
+    color: #f7e800;
+  }
+  .content_container .btn_box input[type="password"] {
+    width: 110px;
+    height: 28px;
+    padding: 0 10px;
+    margin: 0 5px 0 0;
+  }
+  .content_container .comment_insert_box {
+    width: 90%;
+  }
+  .content_container .comment_insert_box form table {
+    width: 100%;
+  }
+  .content_container .comment_insert_box form table thead tr td:nth-of-type(even) {
+    width: 20%;
+  }
+  .content_container .comment_insert_box form table thead tr td:nth-of-type(even) input {
+    width: 30%;
+    margin: 0 10px;
+  }
+  .content_container .comment_insert_box form table tbody tr td:nth-of-type(2) {
+    width: 10%;
+  }
+  .content_container .comment_insert_box form table tbody tr td:nth-of-type(2) textarea {
+    width: 80%;
+  }
+}

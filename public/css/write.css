@@ -1,0 +1,381 @@
+@font-face {
+  font-family: "Noto_regular";
+  font-style: normal;
+  font-weight: 400;
+  src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff2) format("woff2"), url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff) format("woff"), url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "Noto_right";
+  font-style: normal;
+  font-weight: 300;
+  src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.woff2) format("woff2"), url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.woff) format("woff"), url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "Noto_bold";
+  font-style: normal;
+  font-weight: 700;
+  src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.woff2) format("woff2"), url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.woff) format("woff"), url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "Arita_Medium";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Arita-dotum-Medium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "NanumBarunGothic";
+  font-style: normal;
+  font-weight: 700;
+  src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot");
+  src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot?#iefix") format("embedded-opentype"), url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.woff") format("woff"), url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.ttf") format("truetype");
+}
+
+.after::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.content_container {
+  width: 1920px;
+  height: auto;
+  margin: 35px auto 85px;
+}
+
+.content_container .tab_menu_box {
+  width: 1250px;
+  height: 50px;
+  margin: 30px auto 100px;
+}
+
+.content_container .tab_menu_box li {
+  width: 33.1%;
+  height: 50px;
+  float: left;
+  text-align: center;
+  line-height: 50px;
+  border: 1px solid #c4c4c4;
+  border-right: none;
+}
+
+.content_container .tab_menu_box li a {
+  color: #707070;
+  font-family: "NanumBarunGothic", sans-serif;
+}
+
+.content_container .tab_menu_box li:hover {
+  background-color: #eab900;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+.content_container .tab_menu_box li:hover a {
+  color: white;
+}
+
+.content_container .tab_menu_box li:last-of-type {
+  border-right: 1px solid #c4c4c4;
+}
+
+.content_container .content_box {
+  width: 1250px;
+  margin: 0 auto;
+}
+
+.content_container .content_box .title_box {
+  font-family: "NanumBarunGothic", sans-serif;
+}
+
+.content_container .content_box .title_box h3 {
+  font-size: 50px;
+  padding: 20px 0;
+  position: relative;
+}
+
+.content_container .content_box .title_box h3::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 50px;
+  height: 10px;
+  background-color: #f3c516;
+  top: -20px;
+  left: 0;
+}
+
+.content_container .content_box .table_box {
+  width: 100%;
+  height: auto;
+  margin: 110px auto;
+}
+
+.content_container .content_box .table_box .write_box {
+  width: 100%;
+  height: auto;
+  border-top: 2px solid #888888;
+  border-collapse: collapse;
+  text-align: center;
+  font-family: "NanumBarunGothic", sans-serif;
+}
+
+.content_container .content_box .table_box .write_box thead tr {
+  height: 60px;
+  border-bottom: 1px solid #bebebe;
+}
+
+.content_container .content_box .table_box .write_box thead tr td:first-of-type {
+  width: 10%;
+  background-color: #f8f8f8;
+  font-size: 14px;
+}
+
+.content_container .content_box .table_box .write_box thead tr td:last-of-type {
+  text-align: left;
+}
+
+.content_container .content_box .table_box .write_box thead tr td:last-of-type input {
+  height: 30px;
+  margin: 0 20px;
+  padding: 0 10px;
+  border: 1px solid #a6a6a6;
+  border-radius: 5px;
+  outline: none;
+}
+
+.content_container .content_box .table_box .write_box thead tr td:last-of-type input[name="title"] {
+  width: 620px;
+}
+
+.content_container .content_box .table_box .write_box tbody tr {
+  height: 30px;
+}
+
+.content_container .content_box .table_box .write_box tbody tr td textarea {
+  width: 98%;
+  padding: 10px;
+  margin: 5px 0;
+}
+
+.content_container .content_box .btn_box {
+  width: 100%;
+  height: auto;
+  margin: 15px 0;
+}
+
+.content_container .content_box .btn_box input {
+  float: right;
+}
+
+.content_container .content_box .btn_box a,
+.content_container .content_box .btn_box input[type="submit"] {
+  padding: 7px 12px;
+  background-color: #5e5e5e;
+  border: 1px solid #a7a7a7;
+  color: white;
+  font-family: "NanumBarunGothic", sans-serif;
+  float: right;
+  font-size: 12px;
+  border-radius: 5px;
+  margin: 0 3px;
+}
+
+.content_container .content_box .btn_box input[type="submit"] {
+  color: #f7e800;
+  cursor: pointer;
+}
+
+.content_container .content_box .btn_box input[type="password"] {
+  width: 110px;
+  height: 28px;
+  padding: 0 10px;
+  border: 1px solid #a7a7a7;
+  border-radius: 5px;
+  margin: 0 5px 0 0;
+  font-family: "NanumBarunGothic", sans-serif;
+  outline: none;
+}
+
+@media (max-width: 1024px) {
+  .content_container {
+    width: auto;
+  }
+  .content_container .tab_menu_box {
+    width: auto;
+    height: 50px;
+    margin: 30px auto 100px;
+    text-align: center;
+  }
+  .content_container .tab_menu_box li {
+    width: 30%;
+    height: 50px;
+    float: unset;
+    display: inline-block;
+    text-align: center;
+    line-height: 50px;
+    border: 1px solid #c4c4c4;
+  }
+  .content_container .tab_menu_box li a {
+    color: #707070;
+    font-size: 0.8em;
+    font-family: "NanumBarunGothic", sans-serif;
+  }
+  .content_container .tab_menu_box li:hover {
+    background-color: #eab900;
+    -webkit-transition-duration: 0.5s;
+            transition-duration: 0.5s;
+  }
+  .content_container .tab_menu_box li:hover a {
+    color: white;
+  }
+  .content_container .tab_menu_box li:last-of-type {
+    border-right: 1px solid #c4c4c4;
+  }
+  .content_container .tab_menu_box li:nth-of-type(1) {
+    background-color: #eab900;
+  }
+  .content_container .tab_menu_box li:nth-of-type(1) a {
+    color: white;
+  }
+  .content_container .content_box {
+    width: 90%;
+  }
+  .content_container .content_box .table_box .board_table thead tr {
+    height: 60px;
+    border-bottom: 1px solid #bebebe;
+  }
+  .content_container .content_box .table_box .board_table thead tr td:first-of-type {
+    width: 10%;
+    background-color: #f8f8f8;
+    font-size: 14px;
+  }
+  .content_container .content_box .table_box .board_table thead tr td:last-of-type {
+    text-align: left;
+  }
+  .content_container .content_box .table_box .board_table thead tr td:last-of-type input {
+    margin: 0 20px;
+    padding: 0 10px;
+  }
+  .content_container .content_box .table_box .board_table thead tr td:last-of-type input[name="title"] {
+    width: 80%;
+  }
+  .content_container .content_box .table_box .board_table thead tr tbody tr {
+    height: 30px;
+  }
+  .content_container .content_box .table_box .board_table thead tr tbody tr td textarea {
+    width: 98%;
+    padding: 10px;
+    margin: 5px 0;
+  }
+  .content_container .content_box .btn_box {
+    width: 100%;
+    height: auto;
+    margin: 15px 0;
+  }
+  .content_container .content_box .btn_box input {
+    float: right;
+  }
+  .content_container .content_box .btn_box a,
+  .content_container .content_box .btn_box input[type="submit"] {
+    padding: 7px 12px;
+    float: right;
+    font-size: 12px;
+    margin: 0 3px;
+  }
+  .content_container .content_box .btn_box input[type="submit"] {
+    color: #f7e800;
+  }
+  .content_container .content_box .btn_box input[type="password"] {
+    width: 110px;
+    height: 28px;
+    padding: 0 10px;
+    margin: 0 5px 0 0;
+  }
+}
+
+@media (max-width: 766px) {
+  .content_container {
+    width: auto;
+  }
+  .content_container .content_box {
+    width: 98%;
+  }
+  .content_container .content_box .title_box {
+    margin: 0 0 0 30px;
+  }
+  .content_container .content_box .title_box h3 {
+    font-size: 1.6em;
+  }
+  .content_container .content_box .title_box p {
+    font-size: 0.8em;
+  }
+  .content_container .content_box .table_box {
+    width: 100%;
+  }
+  .content_container .content_box .table_box form {
+    width: 100%;
+  }
+  .content_container .content_box .table_box form .write_box {
+    width: 100%;
+  }
+  .content_container .content_box .table_box form .write_box thead tr {
+    height: 60px;
+    border-bottom: 1px solid #bebebe;
+  }
+  .content_container .content_box .table_box form .write_box thead tr td:first-of-type {
+    width: 30%;
+    background-color: #f8f8f8;
+    font-size: 14px;
+  }
+  .content_container .content_box .table_box form .write_box thead tr td:last-of-type {
+    text-align: left;
+  }
+  .content_container .content_box .table_box form .write_box thead tr td:last-of-type input {
+    margin: 0 20px;
+    padding: 0 10px;
+  }
+  .content_container .content_box .table_box form .write_box thead tr td:last-of-type input[name="title"] {
+    width: 80%;
+  }
+  .content_container .content_box .table_box form .write_box tr tbody tr {
+    height: 30px;
+  }
+  .content_container .content_box .table_box form .write_box tr tbody tr td textarea {
+    width: 98%;
+    padding: 10px;
+    margin: 5px 0;
+  }
+  .content_container .btn_box {
+    width: 100%;
+    height: auto;
+    margin: 15px 0;
+  }
+  .content_container .btn_box input {
+    float: right;
+  }
+  .content_container .btn_box a,
+  .content_container .btn_box input[type="submit"] {
+    padding: 7px 12px;
+    float: right;
+    font-size: 12px;
+    margin: 0 3px;
+  }
+  .content_container .btn_box input[type="submit"] {
+    color: #f7e800;
+  }
+  .content_container .btn_box input[type="password"] {
+    width: 110px;
+    height: 28px;
+    padding: 0 10px;
+    margin: 0 5px 0 0;
+  }
+  .content_container .cke_toolbar:nth-of-type(1),
+  .content_container .cke_toolbar:nth-of-type(2),
+  .content_container .cke_toolbar:nth-of-type(3),
+  .content_container .cke_toolbar:nth-of-type(4) {
+    display: none;
+  }
+}
